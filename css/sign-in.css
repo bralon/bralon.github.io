@@ -1,0 +1,655 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url("../img/bg-3.jpeg") no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.background .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+ /* Bordered form */
+form {
+    border: 0px solid #f1f1f1;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+} 
+
+.loginform {
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: large;
+}
+
+@media (max-width: 480px) {
+    .loginform {
+        font-size: large;
+    }
+}
+
+.signupform {
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: large;
+}
+
+@media (max-width: 480px) {
+    .signupform {
+        font-size: large;
+    }
+}
+
+button.design-options-btn {
+  border: 1px solid #B3B3B3;
+  border-radius: 50px;
+  background-color: transparent;
+  filter: grayscale(1);
+}
+
+
+button.design-options-btn>h3 h5 {
+  color: #831985;
+}
+
+button.design-options-btn:hover {
+  border: 1px solid #FF5A92;
+  border-radius: 50px;
+  background-color: transparent;
+  filter:none;
+  transition: all 0.25s ease-in-out;
+}
+
+/* SPEECH BUBBLE MENU FOR ACCOUNT */
+
+ul li.drop {
+  position: relative;
+}
+
+
+.dropOut .triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+  top: -8px;
+  left: 50%;
+  margin-left: -8px;
+}
+.dropdownContain {
+  width: 160px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  margin-left: -80px; /* half of width */
+  /*top: -100px;*/
+}
+.dropOut {
+  width: 160px;
+  background: white;
+  float: left;
+  position: relative;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -ms-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+.dropOut ul {
+  float: left;
+  padding: 10px 0;
+}
+.dropOut ul li {
+  text-align: left;
+  float: left;
+  width: 125px;
+  padding: 12px 0 10px 15px;
+  margin: 0px 10px;
+  color: #777;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background .1s ease-out;
+  -moz-transition: background .1s ease-out;
+  -ms-transition: background .1s ease-out;
+  -o-transition: background .1s ease-out;
+  transition: background .1s ease-out;
+}
+
+.dropOut ul li:hover {
+  /*background: #f6f6f6;*/
+}
+
+ul li a:hover { color: salmon; }
+ul li:hover .dropdownContain { top: 50px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 1; margin-top: 3px; }
+
+.quick-start {
+
+
+
+}
+
+.quick-start-category>h4 {
+  border: 1px solid grey;
+  height: 200px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.description {
+  visibility: hidden;
+  transition: opacity .25s ease-out;
+}
+
+.quick-start-category:hover .description {
+  visibility: visible;
+  transition: all 200ms ease-in;
+
+}
+
+.quick-start-category {
+
+    -webkit-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.quick-start-category:hover {
+
+    z-index: 2;
+    -webkit-transition: all .25s ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all .25s ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all .25s ease-in;
+    -moz-transform: scale(1.5);
+    transition: all .25s ease-in;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+.four-steps .col-md-3>h4 {
+  font-weight: lighter;
+  line-height: 1.3;
+}
+
+.quick-start-category a span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+}
+
+
+/* ALL PRODUCT LSIT */
+
+#all-product-list {
+
+}
+
+.product-cat {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  margin: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+.product-list>li>a:hover {
+  color: salmon;
+  text-decoration: none;
+}
+
+.product-list>li>a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.submit-btn-2 {
+  background-color: #42E092;
+}
+
+.submit-btn-2:hover {
+  background-color: #FF5A92;
+  transition: all 0.25s ease-in-out;
+}
+
+.submit-btn-2.submit-btn>h4 {
+  color: white;
+}
+
+.submit-btn-2 a span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0; 
+}
+
+
+
+/* PLACEHOLDER TEXT */
+
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #B6B6B6;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+}
+:-moz-placeholder { /* older Firefox*/
+ font-size:14px;
+ color: #B6B6B6;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+ font-size: 14px;
+ color: #B6B6B6; 
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+} 
+:-ms-input-placeholder { 
+ font-size: 14px; 
+ color: #B6B6B6;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+}
+
+/* W3SCHOOL DROPDOWN MENU */
+
+ /* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    border-radius: 10px;
+    margin-left: -50px;
+
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;     
+  border-radius: 5px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all .1s ease-out;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+
+} 
+
+.quick-start-wrapper {
+
+  display: inline-flex;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+  position: absolute;
+  left: 0;
+}
+
+
+
+@media (width: 414px) {
+  .quick-start-wrapper {
+    display: block;
+    margin-top: -300px;
+  }
+}
+
+.quick-start-here-text-wrapper {
+  padding: 20px;
+  vertical-align: center;
+  background-color: #42E092;
+ 
+  overflow: auto;
+  display: flex;
+
+}
+
+.quick-start-here-text {
+  margin: auto;
+  display: flex;
+
+}
+
+.learn-more-text {
+  font-size: 1.3em;
+  font-weight: normal; 
+  top: 15%; 
+  padding: 20px;
+  text-decoration: underline;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+
+}
+
+
+
+.container {
+  position: relative;
+}
+
+.learn-more-text h1 {
+  font-size: 0.5em; 
+  font-weight: normal; 
+  line-height: 0.25; 
+
+}
+
+@media (max-width: 400px) {
+  .quick-start-wrapper {
+    display: block;
+  }
+
+  .quick-start-cust-type {
+    display: block;
+  }
+}
+
+.quick-start-cust-type {
+  padding: 20px;
+  transition: transform .2s;
+}
+
+.quick-start-cust-type a span {
+position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+}
+
+.quick-start-cust-type:hover {
+  transform: scale(1.1);
+  background: #f6f6f6;
+
+}
+
+.tl {
+  border-left:1px solid grey;
+  margin: auto;
+  height: 100px;
+}
+
+@media (max-width: 400px) {
+  .tl {
+    border-bottom: 1px solid grey;
+   
+}
+}
+
+
+/* HAMBURGER MENU */
+
+#nav{
+      -webkit-transition: background-color 800ms linear;
+       -moz-transition: background-color 800ms linear;
+      -ms-transition: background-color 800ms linear;
+         -o-transition: background-color 800ms linear;
+      transition: background-color 500ms linear;
+}
+.navbar-default {
+  border-color: transparent;
+  background-color: white;
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: ;
+}
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 12px;
+}
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #fff;
+}
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+}
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: rgba(62,62,62,0.94);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-contents a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-contents a:hover {
+  background-color: white
+}
+.dropdowns:hover .dropdown-contents {
+  display: block;
+}
+.dropdown-contents > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #777777;
+  right: 17px;
+  top: 14px;
+}
+
+.navbar-header {
+  display: inline-flex;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+
+#bs-example-navbar-collapse-2 {
+  display: none;
+}
+
+@media (max-width: 414px) {
+#bs-example-navbar-collapse-2 {
+  display: block;
+}
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+.category-text {
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.category {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: all 0.05s ease-in;
+ 
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category-text:hover {
+  background-color: #f6f6f6;
+
+}
+
+.quick-start-selector-wrapper {
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
