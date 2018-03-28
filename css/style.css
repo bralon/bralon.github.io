@@ -62,7 +62,7 @@ Table OF Contents
 \*----------------------------*/
 
 body {
-  font-family: 'Proxima Nova', Georgia, sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   color: #4A4E5A;
   overflow-x: hidden;
   background-color: #fbfbfb;
@@ -308,6 +308,7 @@ textarea.input {
 #section-2 {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #F0F4F8;
 }
 
 #section-3 {
@@ -366,10 +367,10 @@ textarea.input {
 #header {
   padding-top: 10px;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: white;
   z-index: 100;
-  border-bottom: 2px solid #f6f6f6;
+  
 }
 
 @media (max-width: 400px) {
@@ -455,7 +456,7 @@ height: 100%;
 }
 
 .header-btns>li>a>h5:hover {
-  color:salmon;
+  color:#FF4396;
 
 }
 
@@ -563,15 +564,16 @@ background-size: cover;
 
 
 #home-wrapper .home-bg{
-  min-height: 1024px;
+  min-height: 504px;
   overflow: hidden;
 }
 
-@media (max-width: 991px) {
-#home-wrapper .home-bg{
-  min-height: 1563px;
-  overflow: hidden;
-}}
+#quick-start {
+  min-height: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
 
 
 #home-text {
@@ -579,7 +581,7 @@ background-size: cover;
   vertical-align: middle;
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 160px;
 
 }
 
@@ -996,10 +998,12 @@ button {
 .blog-title {
   font-size: 20pt;
   padding-top: 10px;
+  text-align: center;
 }
 
 .blog-content {
   margin-top: -10px;
+  font-weight: lighter;
 }
 
 @media (max-width: 400px) {
@@ -2174,6 +2178,10 @@ button {
   font-weight: bold;
   color:white;
   letter-spacing: 1px;
+}
+
+.footer-links>a:hover {
+  color:#FF4396;
 }
 
 @keyframes cf3FadeInOut {

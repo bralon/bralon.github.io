@@ -52,83 +52,56 @@ table, td, th {
 	<!-- HEADER -->
 <header>
 
-		<!-- header -->
-		<div id="header">
-			<div class="container">
-				<div class="nav">
-				<div class="pull-left">
-					<!-- Logo -->
-					<div class="header-logo">
-						<a class="logo" href="index.html"><h2 style="margin-bottom: 0">store name</h2>
-						</a>
-					</div>
-					<!-- /Logo -->
+	<div id="header">
+			<nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/.png" width="180px" alt="Connect"></a>
+            </div>
 
-					<!-- Search -->
-					<!-- div class="header-search">
-						<form>
-							<input class="input search-input" type="text" placeholder="Enter your keyword">
-							<select class="input search-categories">
-								<option value="0">All Categories</option>
-								<option value="1">Category 01</option>
-								<option value="1">Category 02</option>
-							</select>
-							<button class="search-btn"><i class="fa fa-search"></i></button>
-						</form>
-					</div>
-					<!-- /Search -->
-				</div>
-
-				<!-- HEADER ICONS -->
-				
-				<div class="pull-right">
-					<ul class="header-btns">
-
-						<li><a href="#"><h5 style="padding: 15px; margin-bottom:0;">ALL PRODUCTS</h5></a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="header-btns">
+						<li><a href="all-products.html"><h5 style="padding: 15px; margin-bottom:0;">ALL PRODUCTS</h5></a></li>
 						<li><a href="#"><img src="./img/draft-icon.png" style="padding: 0px 10px; height:30px"></a></li>
 						<li><a href="#"><img src="./img/help-icon.png" style="padding: 0px 10px; height:30px"></a></li>
-						<li><a href="#"><img src="./img/shopping-cart-icon.png" style="padding: 0px 10px; height:30px"></a></li>
+						<li><a href="#"><img src="./img/shopping-cart-icon.png" style="padding: 0px 10px; height:30px" id="cart"></a></li>
 
-						<li class="drop">
-				<a href="account.html"><img src="./img/account-icon.png" style="padding: 0px 10px; height:30px"></a>
+						<div class="dropdown">
+						 	<a href="account.html"><img src="./img/account-icon.png" style="padding: 0px 10px; height:30px"></a>
+						  <div class="dropdown-content">
+								<p style="padding: 15px; text-align: center; font-weight: bold">MY ACCOUNT</p>
+							    <a href="sign-in.html">Sign In</a>
+							   	<a href="sign-up.html">Join</a>
 				
-				<div class="dropdownContain">
-					<div class="dropOut">
-						<div class="triangle"></div>
-						<ul>
-							<li>Order History</a></li>
-							<li>Personal Info</li>
-							<li>Addresses</li>
-							<li>Saved Payment</li>
-						</ul>
-					</div>
-				</div>
-			
-			</li>
+						 </div>
+						</div> 
+            </div>
+            <!-- /.navbar-collapse -->
 
-
-
-
-				</ul>
-			</div>
-			</div>
+           
+        </div>
+        <!-- /.container-fluid -->
+    		</nav>
 		</div>
-			<!-- header -->
-		</div>
-		<!-- container -->
 	</header>
 	<!-- /HEADER -->
 
 	<section id="home">
 		<div id="home-wrapper">
-			<div class="home-bg">
-				<img src="./img/pexels-photo.jpg">
-			</div>
+			
 		
 
-		<div id="home-text">
-			<div class="container">
-						<div class="col-md-offset-3 col-md-6 col-md-offset-3">
+	
+			<div class="container-login100">
+						<div class="login">
 						 <form action="action_page.php">
 						  <div class="container loginform">
 						    <center><label for="email"><b>Email</b></label></center>
@@ -153,257 +126,14 @@ table, td, th {
 						  </div-->
 						</form> 
 					</div>
-		</div>
-		</div>
-	</section>
-
-
-	<section id="section-2">
-		<div class="container">
-			<div class="introduction-text text-center">
-				<h1>Print anything easily!</h1>
-						</div>
-				<div class="four-steps text-center clearfix" style="margin-top: 65px">
-					<div class="col-md-3">
-						<div class="steps-icon">
-						<img src="./img/choose-icon.png" style="height:60px">
-						</div>
-						<br>
-						<h3>Choose.</h3>
-						<h4>Browse our product catalog and choose a product you like.</h4>
-					</div>
-
-					<div class="col-md-3">
-						<div class="steps-icon">
-						<img src="./img/design-icon.png" style="height:60px">
-						</div>
-						<br>
-						<h3>Design.</h3>
-						<h4>Upload your finished artwork browse from our template library or design it yourself here.</h4>
-					</div>
-
-					<div class="col-md-3">
-						<div class="steps-icon">
-						<img src="./img/approve-icon.png" style="height:60px">
-						</div>
-						<br>
-						<h3>Approve.</h3>
-						<h4>Check the preview and ensure your files and designs are correct.</h4>
-					</div>
-
-					<div class="col-md-3">
-						<div class="steps-icon">
-						<img src="./img/finalize-icon.png" style="height:60px">
-						</div>
-						<br>
-						<h3>Finalize.</h3>
-						<h4>Specify the quantity you want, fill in the shipping address and make payment.</h4>
-					</div>
-				</div>
-			
-		</div>
-
-	</section>
-
-	<hr>
-
-	<section id="featured">
-		<!-- container -->
-		<div class="container">
-
-			<div class="featured-title text-center">
-			<h2>What's Hot of the Press</h2>
-
-				</div>
-
-				<!--div class="text-center gradient-line">
-					<img src="./img/gradient-line.png">
-				</div>
-			<!-- row -->
-			<div class="row">
-				<!-- banner -->
-				<div class="col-md-4 col-sm-6">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-1.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 1</strong>
-						</div>
-							<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					 <div class="create-now-btn"> 
-						<div class="btn btn-1">CREATE NOW</div>
-					</div>
-				</div>
-				<!-- /banner -->
-
-				<!-- banner -->
-				<div class="col-md-4 col-sm-6">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-2.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 2</strong>
-						</div>
-
-						<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					<div class="create-now-btn"> 
-						<a class="btn btn-1">CREATE NOW</a>
-					</div>
-				</div>
-
-
-				
-				<!-- /banner -->
-
-				<!-- banner -->
-				<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-3.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 3</strong>
-						</div>
-
-
-						<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					<div class="create-now-btn"> 
-						<div class="btn btn-1">CREATE NOW</div>
-					</div>
-				</div>
-
-				</div>
-				<!-- /banner -->
-			</div>
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</section>
-	<!-- /section -->
-
-
-	<section id="section-3" style="background-image: url(./img/green-bg.png); background-repeat: no-repeat;">
-		<!-- container -->
-		<div class="container">
-
-			<div class="featured-title text-center">
-			<h2 style="color:white">Cool Tips</h2>
-			<hr style="color:whit">
-
-				</div>
-
-			<!-- row -->
-			<div class="row">
-				<!-- banner -->
-				<div class="col-md-4 col-sm-6">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-1.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 1</strong>
-							<h4 style="color: grey">Date</h4>
-						</div>
-							<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					 <div class="create-now-btn"> 
-						<div class="btn btn-1">READ MORE</div>
-					</div>
-				</div>
-				<!-- /banner -->
-
-				<!-- banner -->
-				<div class="col-md-4 col-sm-6">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-2.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 2</strong>
-							<h4 style="color: grey">Date</h4>
-						</div>
-
-						<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					<div class="create-now-btn"> 
-						<a class="btn btn-1">READ MORE</a>
-					</div>
-				</div>
-
-
-				
-				<!-- /banner -->
-
-				<!-- banner -->
-				<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
-					<a class="banner-blog banner-3" href="#">
-						<img src="./img/img-3.jpg" alt="">
-						<div class="blog-title">
-							<strong>Title 3</strong>
-							<h4 style="color: grey">Date</h4>
-						</div>
-
-
-						<div class="blog-content">
-								<a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-							</div>
-					</a>
-
-					<div class="create-now-btn"> 
-						<div class="btn btn-1">READ MORE</div>
-					</div>
-				</div>
-
-				</div>
-				<!-- /banner -->
-			</div>
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-
-</section>
-
-
-
-	<section id="subscribe">
-		<div class="container">
-			<div class="subscribe-box clearfix">
-			
-					<div class="subscribe-text">
-					<h4>Subscribe to our newsletter!</h4>
-					</div>
-
-
-</form>
-
-			
-
-				
-							
-							
-						
-	</div>
-	</div>
 		
-
+		</div>
 	</section>
 
-	<footer id="footer">
+			
+
+
+	<section id="footer">
 	  
 		<div class="footer-bg" style="background-color: #3A4854"> </div>	
 			<div class="container footer-links">
@@ -415,7 +145,7 @@ table, td, th {
 
 	 			
 
-	</footer>
+	</section>
 
 	
 	
@@ -437,7 +167,7 @@ table, td, th {
 	<script src="js/scrollreveal.min.js"></script>
 
 	<script>window.sr = ScrollReveal();
-sr.reveal('#home-text');
+
 sr.reveal('#section-2');
 sr.reveal('#featured');
 sr.reveal('.text-mpca-full');
