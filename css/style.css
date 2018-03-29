@@ -2171,6 +2171,7 @@ button {
 .footer-links {
   text-transform: uppercase;
   vertical-align: bottom;
+text-align: left;
 }
 
 .footer-links>a {
