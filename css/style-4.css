@@ -1,0 +1,73 @@
+.topmenubar > li > a > h5 {
+	padding: 15px; 
+	margin-bottom:0;
+}
+
+.topmenubar > li > a > img {
+	padding: 0px 10px; 
+	height:30px;
+}
+
+.account-icon {
+	padding: 0px 10px; 
+	height:30px;
+}
+
+.dropdown-content > p {
+	padding: 15px; 
+	text-align: center; 
+	font-weight: bold;
+}
+
+.index-section {
+padding-bottom: 30px
+}
+
+.category > img {
+	width: 100%; 
+	height: 300px;
+}
+
+.category-text > h3 {
+	padding-top: 25px; 
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.category-text > h4 {
+	padding-top: 25px; 
+	padding-bottom: 15px;
+}
+
+.category-text > h5 {
+	font-weight: lighter; 
+	padding-bottom: 25px;
+}
+
+.four-steps {
+	margin-top: 65px;
+}
+
+.steps-icon > img {
+	height:60px;
+}
+
+.blog-title > h4 {
+	color: grey;
+}
+
+#home-text {
+	top: 111px;
+}
+
+.introduction-text {
+	margin-bottom: 50px;
+}
+
+.introduction-text > h1 {
+	font-size: 3em;
+}
+
+.custom-select {
+	width: 300px;
+}
